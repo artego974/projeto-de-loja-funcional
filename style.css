@@ -8,22 +8,30 @@
     background-color: #333333;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
     }
-    header img {
-    top: 10px; 
-    left: 0px;
-    width: 100px; 
-    height: 100px; 
+    #logo {
+    width: 70px; 
+    height: 70px; 
     border-radius: 50px;
     }
-    #menu{
-        border-radius: 0px;
+    
+    #user {
+        height: 60px;
+        width: 60px;
+        
+    }
+    
+    #carrinho {
         height: 50px;
         width: 50px;
     }
 
+    #menu {
+        height: 50px;
+        width: 50px;
+    }
     #entre-espaco{
         background-color: #333333;
         padding: 20px;
@@ -56,15 +64,18 @@
     nav a:hover {
     color: #ccc;
     }
+    nav h2{
+        color: #989446; 
+        transition: color 0.3s ease;
+    }
    
 .Categorias {
     position: relative;
     cursor: pointer;
-    color: #111; 
-    transition: color 0.3s ease;
+   
 }
 .Categorias:hover {
-    color: #555; 
+    color: #3e4200; 
 }
 
 .categorias-lista {
@@ -121,14 +132,14 @@
     .produto {
     border: 1px solid #ccc;
     padding: 10px;
-    width: calc(32% - 18px); /* Três produtos por linha */
+    width: calc(32% - 18px); 
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
 }   
 
     .produto img {
-    max-width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
     }
 
     button {

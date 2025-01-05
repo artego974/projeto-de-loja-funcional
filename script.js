@@ -1,4 +1,4 @@
-const produtosPopulares = [
+const produtos = [
     {
         nome: "Produto 1",
         preco: "99,99",
@@ -28,12 +28,42 @@ const produtosPopulares = [
         nome: "Produto 6",
         preco: "79,99",
         imagem: "https://via.placeholder.com/150"
+    },
+    {
+        nome: "Produto 7",
+        preco: "99,99",
+        imagem: "https://via.placeholder.com/150"
+    },
+    {
+        nome: "Produto 8",
+        preco: "139,99",
+        imagem: "https://via.placeholder.com/150"
+    },
+    {
+        nome: "Produto 9",
+        preco: "59,99",
+        imagem: "https://via.placeholder.com/150"
+    },
+    {
+        nome: "Produto 10",
+        preco: "49,99",
+        imagem: "https://via.placeholder.com/150"
+    },
+    {
+        nome: "Produto 11",
+        preco: "69,99",
+        imagem: "https://via.placeholder.com/150"
+    },
+    {
+        nome: "Produto 12",
+        preco: "169,99",
+        imagem: "https://via.placeholder.com/150"
     }
 ];
 
 function carregarProdutos() {
     const lista = document.querySelector('.produtos-lista');
-    produtosPopulares.forEach(produto => {
+    produtos.forEach(produto => {
         const produtoDiv = document.createElement('div');
         produtoDiv.classList.add('produto');
         produtoDiv.innerHTML = `
